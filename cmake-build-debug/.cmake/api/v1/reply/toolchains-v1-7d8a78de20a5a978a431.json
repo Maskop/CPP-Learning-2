@@ -1,0 +1,110 @@
+{
+	"kind" : "toolchains",
+	"toolchains" : 
+	[
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/nix/store/9qcnssfmcj2dvbv01nqymvw2ghpw2b97-gccgo-14.1.0/lib/gcc/x86_64-unknown-linux-gnu/14.1.0/include",
+						"/nix/store/9qcnssfmcj2dvbv01nqymvw2ghpw2b97-gccgo-14.1.0/include",
+						"/nix/store/9qcnssfmcj2dvbv01nqymvw2ghpw2b97-gccgo-14.1.0/lib/gcc/x86_64-unknown-linux-gnu/14.1.0/include-fixed",
+						"/nix/store/fwh4fxd747m0py3ib3s5abamia9nrf90-glibc-2.39-52-dev/include"
+					],
+					"linkDirectories" : 
+					[
+						"/nix/store/k7zgvzp2r31zkg9xqgjim7mbknryv6bs-glibc-2.39-52/lib",
+						"/nix/store/9qcnssfmcj2dvbv01nqymvw2ghpw2b97-gccgo-14.1.0/lib",
+						"/nix/store/gbgzrisk1ci85761clgjic8v29x9p8wh-gccgo-wrapper-14.1.0/bin",
+						"/nix/store/9qcnssfmcj2dvbv01nqymvw2ghpw2b97-gccgo-14.1.0/lib/gcc/x86_64-unknown-linux-gnu/14.1.0",
+						"/nix/store/9qcnssfmcj2dvbv01nqymvw2ghpw2b97-gccgo-14.1.0/lib64"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"gcc",
+						"gcc_s",
+						"c",
+						"gcc",
+						"gcc_s"
+					]
+				},
+				"path" : "/run/current-system/sw/bin/cc",
+				"version" : "14.1.0"
+			},
+			"language" : "C",
+			"sourceFileExtensions" : 
+			[
+				"c",
+				"m"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/nix/store/9qcnssfmcj2dvbv01nqymvw2ghpw2b97-gccgo-14.1.0/include/c++/14.1.0",
+						"/nix/store/9qcnssfmcj2dvbv01nqymvw2ghpw2b97-gccgo-14.1.0/include/c++/14.1.0/x86_64-unknown-linux-gnu",
+						"/nix/store/9qcnssfmcj2dvbv01nqymvw2ghpw2b97-gccgo-14.1.0/include/c++/14.1.0/backward",
+						"/nix/store/9qcnssfmcj2dvbv01nqymvw2ghpw2b97-gccgo-14.1.0/lib/gcc/x86_64-unknown-linux-gnu/14.1.0/include",
+						"/nix/store/9qcnssfmcj2dvbv01nqymvw2ghpw2b97-gccgo-14.1.0/include",
+						"/nix/store/9qcnssfmcj2dvbv01nqymvw2ghpw2b97-gccgo-14.1.0/lib/gcc/x86_64-unknown-linux-gnu/14.1.0/include-fixed",
+						"/nix/store/fwh4fxd747m0py3ib3s5abamia9nrf90-glibc-2.39-52-dev/include"
+					],
+					"linkDirectories" : 
+					[
+						"/nix/store/k7zgvzp2r31zkg9xqgjim7mbknryv6bs-glibc-2.39-52/lib",
+						"/nix/store/9qcnssfmcj2dvbv01nqymvw2ghpw2b97-gccgo-14.1.0/lib",
+						"/nix/store/gbgzrisk1ci85761clgjic8v29x9p8wh-gccgo-wrapper-14.1.0/bin",
+						"/nix/store/9qcnssfmcj2dvbv01nqymvw2ghpw2b97-gccgo-14.1.0/lib/gcc/x86_64-unknown-linux-gnu/14.1.0",
+						"/nix/store/9qcnssfmcj2dvbv01nqymvw2ghpw2b97-gccgo-14.1.0/lib64"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"stdc++",
+						"m",
+						"gcc_s",
+						"gcc",
+						"c",
+						"gcc_s",
+						"gcc"
+					]
+				},
+				"path" : "/run/current-system/sw/bin/c++",
+				"version" : "14.1.0"
+			},
+			"language" : "CXX",
+			"sourceFileExtensions" : 
+			[
+				"C",
+				"M",
+				"c++",
+				"cc",
+				"cpp",
+				"cxx",
+				"mm",
+				"mpp",
+				"CPP",
+				"ixx",
+				"cppm",
+				"ccm",
+				"cxxm",
+				"c++m"
+			]
+		}
+	],
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}
