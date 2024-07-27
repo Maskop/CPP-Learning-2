@@ -1,7 +1,7 @@
-set(CMAKE_C_COMPILER "/run/current-system/sw/bin/cc")
+set(CMAKE_C_COMPILER "C:/Users/jachy/AppData/Local/Programs/CLion/bin/mingw/bin/gcc.exe")
 set(CMAKE_C_COMPILER_ARG1 "")
 set(CMAKE_C_COMPILER_ID "GNU")
-set(CMAKE_C_COMPILER_VERSION "14.1.0")
+set(CMAKE_C_COMPILER_VERSION "13.1.0")
 set(CMAKE_C_COMPILER_VERSION_INTERNAL "")
 set(CMAKE_C_COMPILER_WRAPPER "")
 set(CMAKE_C_STANDARD_COMPUTED_DEFAULT "17")
@@ -13,7 +13,7 @@ set(CMAKE_C11_COMPILE_FEATURES "c_std_11;c_static_assert")
 set(CMAKE_C17_COMPILE_FEATURES "c_std_17")
 set(CMAKE_C23_COMPILE_FEATURES "c_std_23")
 
-set(CMAKE_C_PLATFORM_ID "Linux")
+set(CMAKE_C_PLATFORM_ID "MinGW")
 set(CMAKE_C_SIMULATE_ID "")
 set(CMAKE_C_COMPILER_FRONTEND_VARIANT "GNU")
 set(CMAKE_C_SIMULATE_VERSION "")
@@ -21,11 +21,11 @@ set(CMAKE_C_SIMULATE_VERSION "")
 
 
 
-set(CMAKE_AR "/run/current-system/sw/bin/ar")
-set(CMAKE_C_COMPILER_AR "CMAKE_C_COMPILER_AR-NOTFOUND")
-set(CMAKE_RANLIB "/run/current-system/sw/bin/ranlib")
-set(CMAKE_C_COMPILER_RANLIB "CMAKE_C_COMPILER_RANLIB-NOTFOUND")
-set(CMAKE_LINKER "/run/current-system/sw/bin/ld")
+set(CMAKE_AR "C:/Users/jachy/AppData/Local/Programs/CLion/bin/mingw/bin/ar.exe")
+set(CMAKE_C_COMPILER_AR "C:/Users/jachy/AppData/Local/Programs/CLion/bin/mingw/bin/gcc-ar.exe")
+set(CMAKE_RANLIB "C:/Users/jachy/AppData/Local/Programs/CLion/bin/mingw/bin/ranlib.exe")
+set(CMAKE_C_COMPILER_RANLIB "C:/Users/jachy/AppData/Local/Programs/CLion/bin/mingw/bin/gcc-ranlib.exe")
+set(CMAKE_LINKER "C:/Users/jachy/AppData/Local/Programs/CLion/bin/mingw/bin/ld.exe")
 set(CMAKE_MT "")
 set(CMAKE_TAPI "CMAKE_TAPI-NOTFOUND")
 set(CMAKE_COMPILER_IS_GNUCC 1)
@@ -43,7 +43,7 @@ set(CMAKE_C_LINKER_DEPFILE_SUPPORTED TRUE)
 
 # Save compiler ABI information.
 set(CMAKE_C_SIZEOF_DATA_PTR "8")
-set(CMAKE_C_COMPILER_ABI "ELF")
+set(CMAKE_C_COMPILER_ABI "")
 set(CMAKE_C_BYTE_ORDER "LITTLE_ENDIAN")
 set(CMAKE_C_LIBRARY_ARCHITECTURE "")
 
@@ -68,7 +68,7 @@ endif()
 
 
 
-set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "/nix/store/9qcnssfmcj2dvbv01nqymvw2ghpw2b97-gccgo-14.1.0/lib/gcc/x86_64-unknown-linux-gnu/14.1.0/include;/nix/store/9qcnssfmcj2dvbv01nqymvw2ghpw2b97-gccgo-14.1.0/include;/nix/store/9qcnssfmcj2dvbv01nqymvw2ghpw2b97-gccgo-14.1.0/lib/gcc/x86_64-unknown-linux-gnu/14.1.0/include-fixed;/nix/store/fwh4fxd747m0py3ib3s5abamia9nrf90-glibc-2.39-52-dev/include")
-set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "gcc;gcc_s;c;gcc;gcc_s")
-set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/nix/store/k7zgvzp2r31zkg9xqgjim7mbknryv6bs-glibc-2.39-52/lib;/nix/store/9qcnssfmcj2dvbv01nqymvw2ghpw2b97-gccgo-14.1.0/lib;/nix/store/gbgzrisk1ci85761clgjic8v29x9p8wh-gccgo-wrapper-14.1.0/bin;/nix/store/9qcnssfmcj2dvbv01nqymvw2ghpw2b97-gccgo-14.1.0/lib/gcc/x86_64-unknown-linux-gnu/14.1.0;/nix/store/9qcnssfmcj2dvbv01nqymvw2ghpw2b97-gccgo-14.1.0/lib64")
+set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "C:/Users/jachy/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include;C:/Users/jachy/AppData/Local/Programs/CLion/bin/mingw/include;C:/Users/jachy/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed;C:/Users/jachy/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include")
+set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "mingw32;gcc;moldname;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;iconv;mingw32;gcc;moldname;mingwex;kernel32")
+set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "C:/Users/jachy/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0;C:/Users/jachy/AppData/Local/Programs/CLion/bin/mingw/lib/gcc;C:/Users/jachy/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/lib;C:/Users/jachy/AppData/Local/Programs/CLion/bin/mingw/lib")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
