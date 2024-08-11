@@ -91,18 +91,18 @@ int *strToNumArray(string *text) {
             substr.clear();
         }
     }
-    auto *pArrayDetails = new int[2];
+    int **pArrayDetails = new int*[2];
     *pArrayDetails = intArray;
-    int *tempptr = pArrayDetails + 1;
+    int *tempptr = *pArrayDetails + 1;
     *tempptr = *size;
-    return pArrayDetails;
+    return *pArrayDetails;
 }
 
 int getArrayOfNumbersFromUserAndAverage() {
     cout << "Write your number that you want average of: ";
     auto *userInput = new string;
     cin >> *userInput;
-    auto const *numArrayPointers = strToNumArray(userInput);
+    int const *numArrayPointers = strToNumArray(userInput);
     delete userInput;
     getAverageFromArray(numArrayPointers[0], numArrayPointers[1]);
     delete numArrayPointers;
