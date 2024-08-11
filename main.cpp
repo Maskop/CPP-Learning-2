@@ -75,6 +75,40 @@ int getAverageFromArray(int *numbers, int size) {
     return sum / size;
 }
 
+// Gets numbers seperated by space from string
+int *strToNumArray(string *text) {
+    auto *size = new int;
+    *size = 0;
+    for (int i = 0; i < text->size(); i++) { if (text[i] == " " && !text[i + 1].empty()) { size++; } }
+    string substr;
+    auto *intArray = new int[size];
+    for (int i = 0; i < text->size(); i++) {
+        if (text[i] != " ") {
+            substr.append(text[i]);
+        } else {
+            int *tempptr = intArray + i;
+            *tempptr = stoi(substr);
+            substr.clear();
+        }
+    }
+    auto *pArrayDetails = new int[2];
+    *pArrayDetails = intArray;
+    int *tempptr = pArrayDetails + 1;
+    *tempptr = *size;
+    return pArrayDetails;
+}
+
+int getArrayOfNumbersFromUserAndAverage() {
+    cout << "Write your number that you want average of: ";
+    auto *userInput = new string;
+    cin >> *userInput;
+    auto const *numArrayPointers = strToNumArray(userInput);
+    delete userInput;
+    getAverageFromArray(numArrayPointers[0], numArrayPointers[1]);
+    delete numArrayPointers;
+    return 0;
+}
+
 int main() {
     //printAddressOfInt(56);
     // pointers(56);
