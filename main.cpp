@@ -35,13 +35,20 @@ void fillArray(int array[], int size) {
     }
 }
 
+void fillArrayptr(int *array, int size) {
+    for (int *posidtionptr = array; posidtionptr < array + size; posidtionptr++) {
+        *posidtionptr = 0;
+    }
+}
+
 void arrayFilling() {
-    int const size = 10;
-    int array[size];
-    fillArray(array, size);
+    int const size = 50;
+    int *array = new int[size];
+    fillArrayptr(array, size);
     for (int i = 0; i < size; i++) {
         cout << "Array[" << i << "] = " << array[i] << endl;
     }
+    delete [] array;
 }
 
 int movingInArrayUsingPointer() {
@@ -56,8 +63,8 @@ int movingInArrayUsingPointer() {
     cout << "Fifth element is " << *fiftElement << endl;
     cout << "Pointer fiftElement is Indexed in array as " << fiftElement - array << endl;
     delete [] array;
-    array = NULL;
     return 0;
+    cout << "Memory deallocated!" << endl;
 }
 
 int main() {
