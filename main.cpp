@@ -67,6 +67,14 @@ int movingInArrayUsingPointer() {
     cout << "Memory deallocated!" << endl;
 }
 
+int getAverageFromArray(int *numbers, int size) {
+    int sum = 0;
+    for (int *posidtionptr = numbers; posidtionptr < numbers + size; posidtionptr++) {
+        sum += *posidtionptr;
+    }
+    return sum / size;
+}
+
 int main() {
     //printAddressOfInt(56);
     // pointers(56);
