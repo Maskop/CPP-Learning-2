@@ -44,11 +44,28 @@ void arrayFilling() {
     }
 }
 
+int movingInArrayUsingPointer() {
+    int const size = 10;
+    int *array = new int[size];
+    if (array == NULL) {
+        cout << "Memory allocation failed!" << endl;
+        return 1;
+    }
+    fillArray(array, size);
+    int *fiftElement = array + 5;
+    cout << "Fifth element is " << *fiftElement << endl;
+    cout << "Pointer fiftElement is Indexed in array as " << fiftElement - array << endl;
+    delete [] array;
+    array = NULL;
+    return 0;
+}
 
 int main() {
     //printAddressOfInt(56);
     // pointers(56);
     // swapping();
     // arrayFilling()
-    return 0;
+    // return movingInArrayUsingPointer();
+
+    return 1;
 }
